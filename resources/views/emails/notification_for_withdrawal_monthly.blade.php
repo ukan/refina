@@ -1,0 +1,5 @@
+  <div>
+
+    {!! $instruction !!}
+
+  </div>

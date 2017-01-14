@@ -49,5 +49,15 @@ class Kernel extends HttpKernel
         'can' => \Illuminate\Foundation\Http\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+
+        'sentinel_auth' => \App\Http\Middleware\SentinelAuth::class,
+        'SentinelHasAccess' => \App\Http\Middleware\SentinelHasAccess::class,
+        'jwt.auth' => \Tymon\JWTAuth\Middleware\GetUserFromToken::class,
+        'jwt.refresh' => \Tymon\JWTAuth\Middleware\RefreshToken::class,
+        'JwtCheck'=> \App\Http\Middleware\JwtCheck::class,
+        'sentinel_guest' => \App\Http\Middleware\SentinelRedirectIfAuthenticated::class,
+
+        'AdminAccess' => \App\Http\Middleware\AdminAccess::class,
+        'MemberAccess' => \App\Http\Middleware\MemberAccess::class,
     ];
 }

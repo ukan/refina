@@ -10,7 +10,8 @@
         <li><span>Profile Settings</span></li>
     </ol>
 @endsection
-
+ 
+ 
 @section('content')
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
